@@ -74,15 +74,13 @@ public class MainActivity extends AppCompatActivity {
                         (MainActivity.this, requestCode,
                                 intent, PendingIntent.FLAG_CANCEL_CURRENT);
 
-                Notification.BigTextStyle bigText = new
-                        Notification.BigTextStyle();
+                Notification.BigTextStyle bigText = new Notification.BigTextStyle();
                 bigText.bigText("This is one big text");
                 bigText.setBigContentTitle("Big Text – Long Content");
                 bigText.setSummaryText("Reflection Journal?");
 
                 // Build notification
-                Notification.Builder builder = new
-                        Notification.Builder(MainActivity.this);
+                Notification.Builder builder = new Notification.Builder(MainActivity.this);
                 builder.setContentTitle("Amazing Offer!");
                 builder.setContentText("Subject");
                 builder.setSmallIcon(R.mipmap.ic_launcher);
